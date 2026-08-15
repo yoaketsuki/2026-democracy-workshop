@@ -37,27 +37,28 @@ header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:itali
 .top-bar .brand { color:var(--ink-muted); text-decoration:none; }
 .top-bar .crumb { color:var(--accent-deep); text-decoration:none; font-weight:500; white-space:nowrap; }
 .top-bar a:hover { color:var(--accent-warm); }
-.float-nav { position:fixed; top:50%; right:1.6rem; transform:translateY(-50%);
-  background:var(--bg-card); border:1px solid var(--rule); border-radius:18px;
-  padding:.65rem .45rem .7rem; box-shadow:0 8px 28px rgba(60,52,44,.10);
-  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.3rem; }
-.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.6rem; letter-spacing:.2em;
-  color:var(--ink-muted); padding-bottom:.45rem; margin-bottom:.2rem;
+.float-nav { position:fixed; top:50%; left:1.1rem; transform:translateY(-50%);
+  background:var(--bg-card); border:1px solid var(--rule); border-radius:14px;
+  padding:.45rem .3rem .5rem; box-shadow:0 6px 22px rgba(60,52,44,.09);
+  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.15rem; }
+.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.52rem; letter-spacing:.16em;
+  color:var(--ink-muted); padding-bottom:.35rem; margin-bottom:.15rem;
   border-bottom:1px solid var(--rule); width:100%; text-align:center; }
-.float-nav a { position:relative; width:2.5rem; height:2.5rem; border-radius:50%;
+.float-nav a { position:relative; width:1.85rem; height:1.85rem; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:600;
+  font-family:'Cormorant Garamond',serif; font-size:.95rem; font-weight:600;
   color:var(--ink-muted); text-decoration:none; transition:all .2s; }
 .float-nav a:hover,.float-nav a.active { background:var(--callout-bg); color:var(--accent-deep); }
-.float-nav a .tooltip { position:absolute; right:3.1rem; top:50%; transform:translateY(-50%);
-  background:var(--ink); color:#fcfbf9; padding:.55rem .9rem; border-radius:10px;
-  font-family:'Noto Sans TC',sans-serif; font-size:.74rem; white-space:normal;
-  width:max-content; max-width:14rem; line-height:1.6; opacity:0; pointer-events:none;
+.float-nav a .tooltip { position:absolute; left:2.4rem; top:50%; transform:translateY(-50%);
+  background:var(--ink); color:#fcfbf9; padding:.5rem .85rem; border-radius:10px;
+  font-family:'Noto Sans TC',sans-serif; font-size:.72rem; white-space:normal;
+  width:max-content; max-width:13rem; line-height:1.6; opacity:0; pointer-events:none;
   transition:opacity .2s; box-shadow:0 6px 20px rgba(0,0,0,.15); }
 .float-nav a:hover .tooltip { opacity:1; }
-@media (max-width:640px){ .float-nav{right:.6rem;padding:.5rem .35rem;}
-  .float-nav a{width:2.1rem;height:2.1rem;font-size:1rem;}
-  .float-nav a .tooltip{max-width:10rem;font-size:.68rem;} }
+@media (max-width:900px){ .float-nav{left:.4rem;} }
+@media (max-width:640px){ .float-nav{left:.3rem;padding:.35rem .25rem;}
+  .float-nav a{width:1.6rem;height:1.6rem;font-size:.85rem;}
+  .float-nav a .tooltip{max-width:9rem;font-size:.66rem;} }
 main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .intro { background:rgba(236,227,208,.4); border:1px solid var(--rule); border-radius:12px;
   padding:1.4rem 1.7rem; margin-bottom:2.4rem; font-size:.92rem; color:var(--ink-muted); line-height:1.9; }
@@ -151,13 +152,13 @@ footer { text-align:center; padding:2.6rem 1.5rem 3rem; color:var(--ink-muted);
   <a class="brand" href="index.html">2026 教育民主韌性教師增能研習</a>
   <a class="crumb" href="index.html">← 返回總覽</a>
 </div>
-<div class="float-nav"><div class="float-nav-label">場次</div><a href="session-2.html">2<span class="tooltip">第2場・</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html" class="active">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
+<div class="float-nav"><div class="float-nav-label">場次</div><a href="session-2.html">2<span class="tooltip">第2場・從認知作戰看中國：青年世代的理解與應對</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html" class="active">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
 <main>
   <div class="talk-tags"><span class="tag">第5場</span><span class="tag">Day 1・第5場・15:50–17:00｜高雄（70 分鐘）</span></div>
   <h1 class="talk-title">Taiwan in twenty-First Century Great Power Competition</h1>
   <p class="talk-speaker">方志恒 Brian C. H. Fong（國立中山大學社會科學院副院長）</p>
   <div class="callout">
-    <div class="callout-title"><span>📋</span>全場一句話</div>
+    <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">一個國家會走向修正主義還是選擇制衡，取決於它在權力分布上是變強還是變弱；但它會走得多快多猛，取決於它的政體是民主還是威權——用這個雙軸框架回頭看，1992 年台海兩岸軍費大致相當，現在中國的軍費是台灣的二十倍，這才是理解眼前一切軍事施壓的「大架構」。</div>
   </div>
   <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">講者背景</h2></div>

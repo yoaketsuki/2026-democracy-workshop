@@ -37,27 +37,28 @@ header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:itali
 .top-bar .brand { color:var(--ink-muted); text-decoration:none; }
 .top-bar .crumb { color:var(--accent-deep); text-decoration:none; font-weight:500; white-space:nowrap; }
 .top-bar a:hover { color:var(--accent-warm); }
-.float-nav { position:fixed; top:50%; right:1.6rem; transform:translateY(-50%);
-  background:var(--bg-card); border:1px solid var(--rule); border-radius:18px;
-  padding:.65rem .45rem .7rem; box-shadow:0 8px 28px rgba(60,52,44,.10);
-  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.3rem; }
-.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.6rem; letter-spacing:.2em;
-  color:var(--ink-muted); padding-bottom:.45rem; margin-bottom:.2rem;
+.float-nav { position:fixed; top:50%; left:1.1rem; transform:translateY(-50%);
+  background:var(--bg-card); border:1px solid var(--rule); border-radius:14px;
+  padding:.45rem .3rem .5rem; box-shadow:0 6px 22px rgba(60,52,44,.09);
+  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.15rem; }
+.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.52rem; letter-spacing:.16em;
+  color:var(--ink-muted); padding-bottom:.35rem; margin-bottom:.15rem;
   border-bottom:1px solid var(--rule); width:100%; text-align:center; }
-.float-nav a { position:relative; width:2.5rem; height:2.5rem; border-radius:50%;
+.float-nav a { position:relative; width:1.85rem; height:1.85rem; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:600;
+  font-family:'Cormorant Garamond',serif; font-size:.95rem; font-weight:600;
   color:var(--ink-muted); text-decoration:none; transition:all .2s; }
 .float-nav a:hover,.float-nav a.active { background:var(--callout-bg); color:var(--accent-deep); }
-.float-nav a .tooltip { position:absolute; right:3.1rem; top:50%; transform:translateY(-50%);
-  background:var(--ink); color:#fcfbf9; padding:.55rem .9rem; border-radius:10px;
-  font-family:'Noto Sans TC',sans-serif; font-size:.74rem; white-space:normal;
-  width:max-content; max-width:14rem; line-height:1.6; opacity:0; pointer-events:none;
+.float-nav a .tooltip { position:absolute; left:2.4rem; top:50%; transform:translateY(-50%);
+  background:var(--ink); color:#fcfbf9; padding:.5rem .85rem; border-radius:10px;
+  font-family:'Noto Sans TC',sans-serif; font-size:.72rem; white-space:normal;
+  width:max-content; max-width:13rem; line-height:1.6; opacity:0; pointer-events:none;
   transition:opacity .2s; box-shadow:0 6px 20px rgba(0,0,0,.15); }
 .float-nav a:hover .tooltip { opacity:1; }
-@media (max-width:640px){ .float-nav{right:.6rem;padding:.5rem .35rem;}
-  .float-nav a{width:2.1rem;height:2.1rem;font-size:1rem;}
-  .float-nav a .tooltip{max-width:10rem;font-size:.68rem;} }
+@media (max-width:900px){ .float-nav{left:.4rem;} }
+@media (max-width:640px){ .float-nav{left:.3rem;padding:.35rem .25rem;}
+  .float-nav a{width:1.6rem;height:1.6rem;font-size:.85rem;}
+  .float-nav a .tooltip{max-width:9rem;font-size:.66rem;} }
 main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .intro { background:rgba(236,227,208,.4); border:1px solid var(--rule); border-radius:12px;
   padding:1.4rem 1.7rem; margin-bottom:2.4rem; font-size:.92rem; color:var(--ink-muted); line-height:1.9; }
@@ -151,13 +152,13 @@ footer { text-align:center; padding:2.6rem 1.5rem 3rem; color:var(--ink-muted);
   <a class="brand" href="index.html">2026 教育民主韌性教師增能研習</a>
   <a class="crumb" href="index.html">← 返回總覽</a>
 </div>
-<div class="float-nav"><div class="float-nav-label">場次</div><a href="session-2.html">2<span class="tooltip">第2場・</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html" class="active">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
+<div class="float-nav"><div class="float-nav-label">場次</div><a href="session-2.html">2<span class="tooltip">第2場・從認知作戰看中國：青年世代的理解與應對</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html" class="active">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
 <main>
   <div class="talk-tags"><span class="tag">第7場</span><span class="tag">Day 2・第7場・10:30–11:50｜高雄</span></div>
   <h1 class="talk-title">從烏俄戰爭看全民韌性</h1>
   <p class="talk-speaker">劉致昕（獨立記者、Podcast主持人）</p>
   <div class="callout">
-    <div class="callout-title"><span>📋</span>全場一句話</div>
+    <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">俄羅斯對烏克蘭的入侵，是一場精算過的資訊戰演出——開戰前一週鋪陳「解救受壓迫同胞」的敘事，開戰當天勸降、佔領後人口清洗、對世界販賣感動素材，每個階段都有固定劇本；而中共官方刊物已公開把這場戰爭定調為「慢性戰爭」的範本，目標不是奪地，是磨掉人民<strong>撐下去的意志</strong>——這正是台灣要談「全民韌性」的原因。</div>
   </div>
   <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">講者與方法：《真相製造》與烏克蘭是同一件事</h2></div>
@@ -214,15 +215,16 @@ footer { text-align:center; padding:2.6rem 1.5rem 3rem; color:var(--ink-muted);
 <p>劉致昕回應，戰地報導成本極高——目前僅一家保險公司願意承保戰地記者，保費高昂，身為獨立記者必須自行負擔。他坦言這份工作最考驗的其實是信念：戰爭題材極易被「消費」——變成廉價的政治正確、雞湯式的激勵敘事，或恐嚇式的煽動內容，三者都很容易換成流量，但他拒絕這樣做；也因此，願意讓記者長期蹲點報導這場戰爭的台灣媒體並不多，多數判斷讀者已經疲乏。<span class="ts">〔1:14:57〕</span></p>
 <p>他分享一段親身經歷：某晚他所在城市遭轟炸，因太疲憊而猶豫要不要跑防空洞，詢問當地朋友的當下就聽見爆炸聲——隔天新聞證實，那是一公里外一棟公寓被擊中、整棟倒塌。他形容那種切身感就是「賭一把」，而這是他在烏克蘭的每一個夜晚。一位受訪者曾問他，已經是第六次赴烏，是不是不怕？他的回答是：怕，但很重要，所以還是要回來。<span class="ts">〔1:19:48〕</span></p>
 <blockquote>對其他國家的記者，進烏克蘭是一個特例，離開之後就可以放下、回到正常生活。可是對我來說沒有，我進烏克蘭跟出烏克蘭，都活在同一種狀態裡面。</blockquote>
-<p>他解釋，這正是與多數西方記者不同之處：其他國家的記者離開烏克蘭就能徹底抽身；但作為台灣人，他無法說服自己在踏出烏克蘭後就與這件事無關——因為中國正認真且即時地從這場戰爭中學習，他覺得自己沒有「假裝不知道、選擇忽略」的餘地，那對他自己與家人都是不負責任的選擇。張宇慧教授回應，這正是他們願意持續分享相關素材、協助建立韌性網絡的原因，並在此結束本場，全場報以掌聲。<span class="ts">〔1:19:48〕</span><span class="ts">〔1:20:35〕</span></p></div>
-  <div class="summary"><div class="summary-key">帶得走的八件具體物件</div><ol class="summary-list"><li><strong>「不是烏俄戰爭，是俄羅斯對烏克蘭的全面侵略」</strong>——用詞本身就是資訊戰的第一線戰場<span class="ts">〔07:56〕</span></li>
+<p>他解釋，這正是與多數西方記者不同之處：對其他國家的記者而言，烏克蘭是一趟出差，離開之後就能回到自己的國家，日子照常過，什麼都沒有改變；但他不一樣，因為<strong>台灣的處境與烏克蘭是同一種</strong>——他不是從一個危險的地方回到一個安全的地方，而是從一個戰場回到另一個還沒開打的戰場。因為中國正認真且即時地從這場戰爭中學習，他覺得自己沒有「假裝不知道、選擇忽略」的餘地，那對他自己與家人都是不負責任的選擇。張宇慧教授回應，這正是他們願意持續分享相關素材、協助建立韌性網絡的原因，並在此結束本場，全場報以掌聲。<span class="ts">〔1:19:48〕</span><span class="ts">〔1:20:35〕</span></p></div>
+  <div class="summary"><div class="summary-key">帶得走的九件具體物件</div><ol class="summary-list"><li><strong>「不是烏俄戰爭，是俄羅斯對烏克蘭的全面侵略」</strong>——用詞本身就是資訊戰的第一線戰場<span class="ts">〔07:56〕</span></li>
 <li><strong>資訊戰三戰場架構</strong>——自己國內／敵國國內／全世界，可直接套用分析任何對台輿論操作<span class="ts">〔32:40〕</span></li>
 <li><strong>俄羅斯入侵五階段部署</strong>——開戰前一週、開戰當天、前線城市、佔領區、全世界，每階段手法可對照教學<span class="ts">〔35:03〕</span>–<span class="ts">〔56:06〕</span></li>
 <li><strong>「不需要一兵一卒」的符號心理戰</strong>——陌生標誌、噴漆記號讓鄰里互相懷疑，是最低成本的社會分裂手段<span class="ts">〔48:07〕</span></li>
 <li><strong>哈爾基夫假基地台事件</strong>——2025 年無人機搭載假訊號誘導民眾疏散，路線本身還會阻礙己方軍隊，示範資訊戰如何隨科技進化<span class="ts">〔51:19〕</span></li>
 <li><strong>「慢性戰爭」四特徵</strong>——時間拉長、空間不限地理、認知戰是第二戰場、低烈度高頻率＋責任外移，出自中共黨校機關報<span class="ts">〔1:06:48〕</span></li>
 <li><strong>無人機供應鏈九成掌握中國手中</strong>——俄烏雙方零件同源，戰場數據等於即時回饋中國政府<span class="ts">〔1:06:48〕</span></li>
-<li><strong>「意志能撐多久，能不能團結」</strong>——劉致昕認為這才是慢性戰爭真正消耗的對象，也是民主韌性的核心<span class="ts">〔1:06:48〕</span></li></ol></div>
+<li><strong>「意志能撐多久，能不能團結」</strong>——劉致昕認為這才是慢性戰爭真正消耗的對象，也是民主韌性的核心<span class="ts">〔1:06:48〕</span></li>
+<li><strong>「我進烏克蘭跟出烏克蘭，都活在同一種狀態裡面」</strong>——西方記者離開戰地就回到日常，他沒有這個選項，因為台灣與烏克蘭的處境是同一種<span class="ts">〔1:19:48〕</span></li></ol></div>
   <div class="anecdote"><div class="anecdote-key">現場軼事</div><p class="lead">這場的笑點幾乎都帶著苦味，卻也最能看見講者的性格：</p><ul><li><strong>怕遇到以前的老師</strong>——開場他坦承前一晚才回到台灣、時差嚴重、頭昏腦脹，接著說自己是高雄長大的孩子（凱旋國小、五福國中、高雄中學），「然後我就看了一下今天的那個與會老師的名單，就有點擔心」——確認應該不會遇到教過自己的老師之後，才鬆一口氣。<span class="ts">〔00:00〕</span></li>
 <li><strong>沉默的三秒鐘</strong>——第一次進烏克蘭，車子要從波蘭邊境進入時，烏方邊防很認真地反覆確認：「你們是記者，你確定你要前進？前面就有俄軍哦。」他形容全車沉默了三秒鐘，然後想著「都到這邊了」，就笑著繼續往前開。<span class="ts">〔23:37〕</span></li>
 <li><strong>「我猜有吧」</strong>——退役軍人聽完台灣現況後久久說不出話，只是喝著咖啡，最後問他：你們國家的人們有正正經經在準備接下來要發生的事嗎？他自己也只能苦笑著回答「我猜有吧」。<span class="ts">〔26:30〕</span></li>
