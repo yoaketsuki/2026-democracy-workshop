@@ -70,6 +70,10 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
+  margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
+  border-radius:8px; display:inline-block; }
+.alt-title strong { color:var(--ink-light); font-weight:500; }
 .talk-speaker { font-family:'Noto Sans TC',sans-serif; color:var(--ink-muted); font-size:.85rem;
   margin:0 0 1.6rem; display:flex; align-items:baseline; gap:.9rem; flex-wrap:wrap; }
 .orglinks { display:inline-flex; align-items:center; gap:.4rem; flex-shrink:0; }
@@ -154,6 +158,10 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-main { flex:1; display:flex; flex-direction:column; gap:.3rem; min-width:0; }
 .agenda-title { font-weight:500; color:var(--ink-light); font-size:1rem; }
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
+.agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
+.agenda-speaker .role { opacity:.72; }
+.talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
+.talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
 .agenda-status { font-family:'Noto Sans TC',sans-serif; font-size:.68rem; white-space:nowrap;
   padding:.28rem .75rem; border-radius:999px; flex-shrink:0; }
@@ -183,8 +191,9 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
 <div class="float-nav"><div class="float-nav-label">場次</div><a class="nav-home" href="index.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 10.2 12 3.6l9 6.6M5.4 9v10.2h13.2V9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tooltip">回到研習總覽首頁</span></a><span class="nav-sep"></span><a href="session-2.html">2<span class="tooltip">第2場・從認知作戰看中國：青年世代的理解與應對</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html" class="active">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
 <main>
   <div class="talk-tags"><span class="tag">第7場</span><span class="tag">Day 2・第7場・10:30–11:50｜高雄</span></div>
-  <h1 class="talk-title">從烏俄戰爭看全民韌性</h1>
-  <p class="talk-speaker"><span>劉致昕（獨立記者、Podcast主持人）</span><span class="orglinks"><span class="orglinks-name">劉致昕（報導者作者頁・Podcast）</span><a class="orglink" href="https://www.twreporter.org/authors/571dd700dae62379576d7f17" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜官方網站" aria-label="劉致昕（報導者作者頁・Podcast） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://podcasts.apple.com/tw/podcast/%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E8%AB%8B%E5%95%8F%E4%B8%80%E4%B8%8Bby%E8%87%B4%E6%98%95/id1574424804" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜Podcast" aria-label="劉致昕（報導者作者頁・Podcast） Podcast"><i class="ico ico-podcast"></i></a></span></p>
+  <h1 class="talk-title">從烏俄之戰看全民韌性：戰地田野下的公民社會觀察</h1>
+  
+  <p class="talk-speaker"><span>劉致昕<span class="sep">│</span><span class="role">獨立記者、Podcast 主持人</span></span><span class="orglinks"><span class="orglinks-name">劉致昕（報導者作者頁・Podcast）</span><a class="orglink" href="https://www.twreporter.org/authors/571dd700dae62379576d7f17" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜官方網站" aria-label="劉致昕（報導者作者頁・Podcast） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://podcasts.apple.com/tw/podcast/%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E8%AB%8B%E5%95%8F%E4%B8%80%E4%B8%8Bby%E8%87%B4%E6%98%95/id1574424804" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜Podcast" aria-label="劉致昕（報導者作者頁・Podcast） Podcast"><i class="ico ico-podcast"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">俄羅斯對烏克蘭的入侵，是一場精算過的資訊戰演出——開戰前一週鋪陳「解救受壓迫同胞」的敘事，開戰當天勸降、佔領後人口清洗、對世界販賣感動素材，每個階段都有固定劇本；而中共官方刊物已公開把這場戰爭定調為「慢性戰爭」的範本，目標不是奪地，是磨掉人民<strong>撐下去的意志</strong>——這正是台灣要談「全民韌性」的原因。</div>

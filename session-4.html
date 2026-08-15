@@ -70,6 +70,10 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
+  margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
+  border-radius:8px; display:inline-block; }
+.alt-title strong { color:var(--ink-light); font-weight:500; }
 .talk-speaker { font-family:'Noto Sans TC',sans-serif; color:var(--ink-muted); font-size:.85rem;
   margin:0 0 1.6rem; display:flex; align-items:baseline; gap:.9rem; flex-wrap:wrap; }
 .orglinks { display:inline-flex; align-items:center; gap:.4rem; flex-shrink:0; }
@@ -154,6 +158,10 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-main { flex:1; display:flex; flex-direction:column; gap:.3rem; min-width:0; }
 .agenda-title { font-weight:500; color:var(--ink-light); font-size:1rem; }
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
+.agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
+.agenda-speaker .role { opacity:.72; }
+.talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
+.talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
 .agenda-status { font-family:'Noto Sans TC',sans-serif; font-size:.68rem; white-space:nowrap;
   padding:.28rem .75rem; border-radius:999px; flex-shrink:0; }
@@ -184,7 +192,8 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
 <main>
   <div class="talk-tags"><span class="tag">第4場</span><span class="tag">Day 1・第4場・14:20–15:30｜高雄（72 分鐘）</span></div>
   <h1 class="talk-title">讓世界看見台灣：數位外交、校園實作與青年公共參與</h1>
-  <p class="talk-speaker"><span>郭家佑（台灣數位外交協會創辦人）</span><span class="orglinks"><span class="orglinks-name">台灣數位外交協會</span><a class="orglink" href="https://www.tdda.tw/" target="_blank" rel="noopener" title="台灣數位外交協會｜官方網站" aria-label="台灣數位外交協會 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/TaiwanDigitalDiplomacy" target="_blank" rel="noopener" title="台灣數位外交協會｜Facebook" aria-label="台灣數位外交協會 Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/digidiplolab" target="_blank" rel="noopener" title="台灣數位外交協會｜Instagram" aria-label="台灣數位外交協會 Instagram"><i class="ico ico-ig"></i></a></span></p>
+  
+  <p class="talk-speaker"><span>郭家佑<span class="sep">│</span><span class="role">台灣數位外交協會創辦人</span></span><span class="orglinks"><span class="orglinks-name">台灣數位外交協會</span><a class="orglink" href="https://www.tdda.tw/" target="_blank" rel="noopener" title="台灣數位外交協會｜官方網站" aria-label="台灣數位外交協會 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/TaiwanDigitalDiplomacy" target="_blank" rel="noopener" title="台灣數位外交協會｜Facebook" aria-label="台灣數位外交協會 Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/digidiplolab" target="_blank" rel="noopener" title="台灣數位外交協會｜Instagram" aria-label="台灣數位外交協會 Instagram"><i class="ico ico-ig"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">國際觀不該停在「多讀國際新聞」，而是要讓學生遇到真人、面對需要回應的情境、接受差異與不確定性、並留下反思的空間——郭家佑用宜蘭高中與挪威瓦爾德高中之間一場靠業餘無線電打通的「北極連線」，示範了這套框架怎麼落地。</div>

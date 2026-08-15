@@ -70,6 +70,10 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
+  margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
+  border-radius:8px; display:inline-block; }
+.alt-title strong { color:var(--ink-light); font-weight:500; }
 .talk-speaker { font-family:'Noto Sans TC',sans-serif; color:var(--ink-muted); font-size:.85rem;
   margin:0 0 1.6rem; display:flex; align-items:baseline; gap:.9rem; flex-wrap:wrap; }
 .orglinks { display:inline-flex; align-items:center; gap:.4rem; flex-shrink:0; }
@@ -154,6 +158,10 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-main { flex:1; display:flex; flex-direction:column; gap:.3rem; min-width:0; }
 .agenda-title { font-weight:500; color:var(--ink-light); font-size:1rem; }
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
+.agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
+.agenda-speaker .role { opacity:.72; }
+.talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
+.talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
 .agenda-status { font-family:'Noto Sans TC',sans-serif; font-size:.68rem; white-space:nowrap;
   padding:.28rem .75rem; border-radius:999px; flex-shrink:0; }
@@ -183,8 +191,9 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
 <div class="float-nav"><div class="float-nav-label">場次</div><a class="nav-home" href="index.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 10.2 12 3.6l9 6.6M5.4 9v10.2h13.2V9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tooltip">回到研習總覽首頁</span></a><span class="nav-sep"></span><a href="session-2.html">2<span class="tooltip">第2場・從認知作戰看中國：青年世代的理解與應對</span></a><a href="session-3.html" class="active">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
 <main>
   <div class="talk-tags"><span class="tag">第3場</span><span class="tag">Day 1・第3場・13:00–14:10｜高雄（62 分鐘）</span></div>
-  <h1 class="talk-title">抖音對青年世代的認知影響</h1>
-  <p class="talk-speaker"><span>Eric Hsu（台灣民主實驗室 Doublethink Lab 研究員）</span><span class="orglinks"><span class="orglinks-name">台灣民主實驗室</span><a class="orglink" href="https://doublethinklab.org/" target="_blank" rel="noopener" title="台灣民主實驗室｜官方網站" aria-label="台灣民主實驗室 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/doublethinklab/?locale=zh_TW" target="_blank" rel="noopener" title="台灣民主實驗室｜Facebook" aria-label="台灣民主實驗室 Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/doublethinklab" target="_blank" rel="noopener" title="台灣民主實驗室｜Instagram" aria-label="台灣民主實驗室 Instagram"><i class="ico ico-ig"></i></a></span></p>
+  <h1 class="talk-title">抖音對青年世代的認知戰影響</h1>
+  
+  <p class="talk-speaker"><span>Eric Hsu<span class="sep">│</span><span class="role">台灣民主實驗室 Doublethink Lab 研究員</span></span><span class="orglinks"><span class="orglinks-name">台灣民主實驗室</span><a class="orglink" href="https://doublethinklab.org/" target="_blank" rel="noopener" title="台灣民主實驗室｜官方網站" aria-label="台灣民主實驗室 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/doublethinklab/?locale=zh_TW" target="_blank" rel="noopener" title="台灣民主實驗室｜Facebook" aria-label="台灣民主實驗室 Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/doublethinklab" target="_blank" rel="noopener" title="台灣民主實驗室｜Instagram" aria-label="台灣民主實驗室 Instagram"><i class="ico ico-ig"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">TikTok 不需要中國憑空捏造假訊息，它只要放大台灣本來就存在的社會分歧；而 Doublethink Lab 用量化的反事實分析證明了——單純「有在用 TikTok」這件事本身，就會顯著提高使用者變得親中穩定、民粹懷疑，並降低民主本土、憲政支持的機率。</div>
