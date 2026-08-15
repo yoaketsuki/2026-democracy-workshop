@@ -26,8 +26,8 @@ header.hero { background:linear-gradient(135deg,var(--banner-from) 0%,var(--bann
   font-family:'Noto Sans TC',sans-serif; font-size:.72rem; letter-spacing:.08em;
   color:var(--accent-deep); margin-bottom:1.1rem; border:1px solid var(--rule); }
 header.hero h1 { font-size:1.9rem; font-weight:700; margin:0 0 .6rem; color:var(--ink-light); }
-header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:italic;
-  color:var(--ink-muted); font-size:1.15rem; margin:0 0 1.3rem; }
+header.hero .subtitle { font-family:'Noto Sans TC',sans-serif; font-style:normal;
+  color:var(--ink-muted); font-size:.82rem; letter-spacing:.06em; margin:0 0 1.3rem; }
 .header-tags { display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; }
 .header-tags span { background:var(--accent-deep); color:white; border-radius:4px;
   padding:.25rem .8rem; font-family:'Noto Sans TC',sans-serif; font-size:.74rem; letter-spacing:.04em; }
@@ -70,6 +70,8 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.ts-note { font-family:'Noto Sans TC',sans-serif; font-size:.72rem; color:var(--ink-muted);
+  opacity:.8; margin:0 0 1.6rem; }
 .alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
   margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
   border-radius:8px; display:inline-block; }
@@ -160,6 +162,11 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
 .agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
 .agenda-speaker .role { opacity:.72; }
+.one-speaker { display:block; }
+a.speaker-link { color:inherit; text-decoration:none;
+  border-bottom:1px solid var(--rule); transition:all .2s; }
+a.speaker-link:hover { color:var(--accent-warm); border-bottom-color:var(--accent-warm); }
+.one-speaker + .one-speaker { margin-top:.15rem; }
 .talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
 .talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
@@ -193,11 +200,12 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
   <div class="talk-tags"><span class="tag">第7場</span><span class="tag">Day 2・第7場・10:30–11:50｜高雄</span></div>
   <h1 class="talk-title">從烏俄之戰看全民韌性：戰地田野下的公民社會觀察</h1>
   
-  <p class="talk-speaker"><span>劉致昕<span class="sep">│</span><span class="role">獨立記者、Podcast《不好意思請問一下》主持人</span></span><span class="orglinks"><span class="orglinks-name">劉致昕（報導者作者頁・Podcast）</span><a class="orglink" href="https://www.twreporter.org/authors/571dd700dae62379576d7f17" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜官方網站" aria-label="劉致昕（報導者作者頁・Podcast） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://podcasts.apple.com/tw/podcast/%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E8%AB%8B%E5%95%8F%E4%B8%80%E4%B8%8Bby%E8%87%B4%E6%98%95/id1574424804" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜Podcast" aria-label="劉致昕（報導者作者頁・Podcast） Podcast"><i class="ico ico-podcast"></i></a></span></p>
+  <p class="talk-speaker"><span><span class="one-speaker"><a class="speaker-link" href="https://podcasts.apple.com/tw/podcast/%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E8%AB%8B%E5%95%8F%E4%B8%80%E4%B8%8Bby%E8%87%B4%E6%98%95/id1574424804" target="_blank" rel="noopener" title="劉致昕｜講者介紹">劉致昕</a><span class="sep">│</span><span class="role">獨立記者、Podcast《不好意思請問一下》主持人</span></span></span><span class="orglinks"><span class="orglinks-name">劉致昕（報導者作者頁・Podcast）</span><a class="orglink" href="https://www.twreporter.org/authors/571dd700dae62379576d7f17" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜官方網站" aria-label="劉致昕（報導者作者頁・Podcast） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://podcasts.apple.com/tw/podcast/%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E8%AB%8B%E5%95%8F%E4%B8%80%E4%B8%8Bby%E8%87%B4%E6%98%95/id1574424804" target="_blank" rel="noopener" title="劉致昕（報導者作者頁・Podcast）｜Podcast" aria-label="劉致昕（報導者作者頁・Podcast） Podcast"><i class="ico ico-podcast"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">俄羅斯對烏克蘭的入侵，是一場精算過的資訊戰演出——開戰前一週鋪陳「解救受壓迫同胞」的敘事，開戰當天勸降、佔領後人口清洗、對世界販賣感動素材，每個階段都有固定劇本；而中共官方刊物已公開把這場戰爭定調為「慢性戰爭」的範本，目標不是奪地，是磨掉人民<strong>撐下去的意志</strong>——這正是台灣要談「全民韌性」的原因。</div>
   </div>
+  <p class="ts-note">內文〔　〕內為逐字稿音檔時間戳記。</p>
   <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">講者與方法：《真相製造》與烏克蘭是同一件事</h2></div>
 <p>劉致昕（Jason）高雄長大，五福國中、高雄中學畢業，記者資歷十餘年。曾在《報導者》草創期加入，後任副總編輯約四五年；近年以獨立記者身分自籌資源，專注烏克蘭這場戰事的長期報導，四年多來已去了六次，累計訪問約兩百多人。<span class="ts">〔00:00〕</span></p>
 <p>在投入烏克蘭之前，他的報導主題其實是資訊戰：著有《真相製造》一書，收錄 2016–2021 年在八個國家的採訪——網軍、聘用網軍的政黨候選人、歐洲極右派黨主席、劍橋分析等業界人士，也包含中國國內資訊戰、香港反送中的資訊對抗、新疆等案例。他發現許多老師拿這本書做教案，因為書裡都是真人故事（比利時 ISIS 聖戰士母親的視角等），比起講「媒體素養」的抽象說教更容易讓學生進入。<span class="ts">〔00:00〕</span></p>

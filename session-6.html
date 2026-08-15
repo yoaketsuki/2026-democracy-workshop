@@ -26,8 +26,8 @@ header.hero { background:linear-gradient(135deg,var(--banner-from) 0%,var(--bann
   font-family:'Noto Sans TC',sans-serif; font-size:.72rem; letter-spacing:.08em;
   color:var(--accent-deep); margin-bottom:1.1rem; border:1px solid var(--rule); }
 header.hero h1 { font-size:1.9rem; font-weight:700; margin:0 0 .6rem; color:var(--ink-light); }
-header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:italic;
-  color:var(--ink-muted); font-size:1.15rem; margin:0 0 1.3rem; }
+header.hero .subtitle { font-family:'Noto Sans TC',sans-serif; font-style:normal;
+  color:var(--ink-muted); font-size:.82rem; letter-spacing:.06em; margin:0 0 1.3rem; }
 .header-tags { display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; }
 .header-tags span { background:var(--accent-deep); color:white; border-radius:4px;
   padding:.25rem .8rem; font-family:'Noto Sans TC',sans-serif; font-size:.74rem; letter-spacing:.04em; }
@@ -70,6 +70,8 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.ts-note { font-family:'Noto Sans TC',sans-serif; font-size:.72rem; color:var(--ink-muted);
+  opacity:.8; margin:0 0 1.6rem; }
 .alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
   margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
   border-radius:8px; display:inline-block; }
@@ -160,6 +162,11 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
 .agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
 .agenda-speaker .role { opacity:.72; }
+.one-speaker { display:block; }
+a.speaker-link { color:inherit; text-decoration:none;
+  border-bottom:1px solid var(--rule); transition:all .2s; }
+a.speaker-link:hover { color:var(--accent-warm); border-bottom-color:var(--accent-warm); }
+.one-speaker + .one-speaker { margin-top:.15rem; }
 .talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
 .talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
@@ -193,11 +200,12 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
   <div class="talk-tags"><span class="tag">第6場</span><span class="tag">Day 2・第6場・09:00–10:20｜高雄</span></div>
   <h1 class="talk-title">教室裡的獨立思辨：新聞議題與教學素材分享</h1>
   <p class="alt-title">講者現場使用的講題：<strong>重新思考「新聞短影音」：社群媒體的知識轉譯與議題探究</strong></p>
-  <p class="talk-speaker"><span>汪彥成<span class="sep">│</span><span class="role">《報導者》影音製作人</span></span><span class="orglinks"><span class="orglinks-name">報導者 The Reporter</span><a class="orglink" href="https://www.twreporter.org/" target="_blank" rel="noopener" title="報導者 The Reporter｜官方網站" aria-label="報導者 The Reporter 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/twreporter/" target="_blank" rel="noopener" title="報導者 The Reporter｜Facebook" aria-label="報導者 The Reporter Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/twreporter/" target="_blank" rel="noopener" title="報導者 The Reporter｜Instagram" aria-label="報導者 The Reporter Instagram"><i class="ico ico-ig"></i></a><a class="orglink" href="https://www.youtube.com/@TwreporterOrg" target="_blank" rel="noopener" title="報導者 The Reporter｜YouTube" aria-label="報導者 The Reporter YouTube"><i class="ico ico-yt"></i></a></span></p>
+  <p class="talk-speaker"><span><span class="one-speaker"><a class="speaker-link" href="https://www.twreporter.org/authors/63982e2656fc430700f3fdf4" target="_blank" rel="noopener" title="汪彥成｜講者介紹">汪彥成</a><span class="sep">│</span><span class="role">《報導者》影音製作人</span></span></span><span class="orglinks"><span class="orglinks-name">報導者 The Reporter</span><a class="orglink" href="https://www.twreporter.org/" target="_blank" rel="noopener" title="報導者 The Reporter｜官方網站" aria-label="報導者 The Reporter 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/twreporter/" target="_blank" rel="noopener" title="報導者 The Reporter｜Facebook" aria-label="報導者 The Reporter Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/twreporter/" target="_blank" rel="noopener" title="報導者 The Reporter｜Instagram" aria-label="報導者 The Reporter Instagram"><i class="ico ico-ig"></i></a><a class="orglink" href="https://www.youtube.com/@TwreporterOrg" target="_blank" rel="noopener" title="報導者 The Reporter｜YouTube" aria-label="報導者 The Reporter YouTube"><i class="ico ico-yt"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">短影音真正的定義不是「幾秒以內的影片」，而是<strong>一種行為</strong>——在演算法上被動、隨機地探索內容；正因為如此，它對新聞機構的意義不是「內容變淺」，而是<strong>陌生開發能力</strong>：能碰到那些已經開始迴避新聞的人。而要接住這份注意力，靠的不是把議題講得更重要，是先問讀者「他為什麼要看」。</div>
   </div>
+  <p class="ts-note">內文〔　〕內為逐字稿音檔時間戳記。</p>
   <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">起點：新聞疲乏，與短影音的雙重挑戰</h2></div>
 <p>演講開場他先放了一組皮尤研究中心的數據，界定整場的問題意識<span class="ts">〔00:00〕</span>：</p>
 <ul>

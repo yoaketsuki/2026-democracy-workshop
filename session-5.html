@@ -26,8 +26,8 @@ header.hero { background:linear-gradient(135deg,var(--banner-from) 0%,var(--bann
   font-family:'Noto Sans TC',sans-serif; font-size:.72rem; letter-spacing:.08em;
   color:var(--accent-deep); margin-bottom:1.1rem; border:1px solid var(--rule); }
 header.hero h1 { font-size:1.9rem; font-weight:700; margin:0 0 .6rem; color:var(--ink-light); }
-header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:italic;
-  color:var(--ink-muted); font-size:1.15rem; margin:0 0 1.3rem; }
+header.hero .subtitle { font-family:'Noto Sans TC',sans-serif; font-style:normal;
+  color:var(--ink-muted); font-size:.82rem; letter-spacing:.06em; margin:0 0 1.3rem; }
 .header-tags { display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; }
 .header-tags span { background:var(--accent-deep); color:white; border-radius:4px;
   padding:.25rem .8rem; font-family:'Noto Sans TC',sans-serif; font-size:.74rem; letter-spacing:.04em; }
@@ -70,6 +70,8 @@ main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
 .tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
   font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
 .talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.ts-note { font-family:'Noto Sans TC',sans-serif; font-size:.72rem; color:var(--ink-muted);
+  opacity:.8; margin:0 0 1.6rem; }
 .alt-title { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted);
   margin:-.1rem 0 .7rem; padding:.45rem .8rem; background:var(--bg-warm);
   border-radius:8px; display:inline-block; }
@@ -160,6 +162,11 @@ a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,
 .agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
 .agenda-speaker .sep { color:var(--rule); margin:0 .12rem; }
 .agenda-speaker .role { opacity:.72; }
+.one-speaker { display:block; }
+a.speaker-link { color:inherit; text-decoration:none;
+  border-bottom:1px solid var(--rule); transition:all .2s; }
+a.speaker-link:hover { color:var(--accent-warm); border-bottom-color:var(--accent-warm); }
+.one-speaker + .one-speaker { margin-top:.15rem; }
 .talk-speaker .sep { color:var(--rule); margin:0 .15rem; }
 .talk-speaker .role { opacity:.75; }
 .agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
@@ -193,11 +200,12 @@ footer a.footer-home:hover { color:var(--accent-warm); border-bottom-color:var(-
   <div class="talk-tags"><span class="tag">第5場</span><span class="tag">Day 1・第5場・15:50–17:00｜高雄（70 分鐘）</span></div>
   <h1 class="talk-title">Taiwan in Twenty-First Century Great Power Competition（廿一世紀大國競爭下的臺灣）</h1>
   
-  <p class="talk-speaker"><span>方志恒 Brian C. H. Fong<span class="sep">│</span><span class="role">國立中山大學社會科學院副院長</span></span><span class="orglinks"><span class="orglinks-name">全球民主韌性計畫（中山大學社會科學院）</span><a class="orglink" href="https://civiclab.nsysu.edu.tw/" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜官方網站" aria-label="全球民主韌性計畫（中山大學社會科學院） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/profile.php?id=61577227018460" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜Facebook" aria-label="全球民主韌性計畫（中山大學社會科學院） Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/gddinsysu/" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜Instagram" aria-label="全球民主韌性計畫（中山大學社會科學院） Instagram"><i class="ico ico-ig"></i></a></span></p>
+  <p class="talk-speaker"><span><span class="one-speaker"><a class="speaker-link" href="https://empp.nsysu.edu.tw/p/406-1137-300341,r5249.php?Lang=zh-tw" target="_blank" rel="noopener" title="方志恒 Brian C. H. Fong｜講者介紹">方志恒 Brian C. H. Fong</a><span class="sep">│</span><span class="role">國立中山大學社會科學院副院長</span></span></span><span class="orglinks"><span class="orglinks-name">全球民主韌性計畫（中山大學社會科學院）</span><a class="orglink" href="https://civiclab.nsysu.edu.tw/" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜官方網站" aria-label="全球民主韌性計畫（中山大學社會科學院） 官方網站"><i class="ico ico-web"></i></a><a class="orglink" href="https://www.facebook.com/profile.php?id=61577227018460" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜Facebook" aria-label="全球民主韌性計畫（中山大學社會科學院） Facebook"><i class="ico ico-fb"></i></a><a class="orglink" href="https://www.instagram.com/gddinsysu/" target="_blank" rel="noopener" title="全球民主韌性計畫（中山大學社會科學院）｜Instagram" aria-label="全球民主韌性計畫（中山大學社會科學院） Instagram"><i class="ico ico-ig"></i></a></span></p>
   <div class="callout">
     <div class="callout-title"><span>📋</span>講座摘要</div>
     <div class="callout-body">一個國家會走向修正主義還是選擇制衡，取決於它在權力分布上是變強還是變弱；但它會走得多快多猛，取決於它的政體是民主還是威權——用這個雙軸框架回頭看，1992 年台海兩岸軍費大致相當，現在中國的軍費是台灣的二十倍，這才是理解眼前一切軍事施壓的「大架構」。</div>
   </div>
+  <p class="ts-note">內文〔　〕內為逐字稿音檔時間戳記。</p>
   <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">講者背景</h2></div>
 <p>方志恒（Brian C. H. Fong）自我介紹不用職稱、只要叫 Brian。他先解釋了為什麼今天全程用英文講、只在互動時說中文：來台四年他對各方面都很滿意，唯一最難的就是講國語。而每次要講國語，他都會想起黃仁勳的故事——黃仁勳在美國長大，中文跟他差不多吃力，某次赴中演講被主辦單位要求一定要用中文，他很努力準備了中文稿，上台講了幾句之後就說「我還是不要為難大家了，還是說英語吧」。方志恒笑說今天就照辦。<span class="ts">〔01:32〕</span>他是香港出身的民主派學者，人生前二十多年投入香港民主運動，用他自己的話說「結果不如預期，但沒有遺憾——我已經為我的家鄉做了所有能做的事」。香港國安法於 2020 年生效後，他嘗試盡量留在香港，直到 2022 年 2 月意識到必須離開；當時同時收到日本、南韓、英國的工作邀約，最終因為在台灣人脈最深而選擇中山大學。他去年已取得台灣身分證與護照，正式成為台灣人。移居台灣後，他把大部分時間投入研究國際關係，因為他想「從一個較宏觀的視角，同時看待香港（舊家鄉）與台灣（新家鄉）」。<span class="ts">〔01:32〕</span></p>
 <div class="section-head"><span class="section-num">二</span><h2 class="section-title">理論框架：大國政治的兩條軸線</h2></div>
