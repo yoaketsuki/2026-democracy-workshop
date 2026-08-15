@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 教育民主韌性教師增能研習｜研習總覽</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#faf8f5; --bg-warm:#f3eee3; --bg-card:#fcfbf9;
+  --ink:#3c342c; --ink-light:#2a241d; --ink-muted:#837c6c;
+  --accent:#93aeaa; --accent-deep:#63807d; --accent-warm:#ba8a61;
+  --rule:#ebe3d3; --tag-bg:#f3ede0; --highlight:#ba8a61;
+  --callout-bg:#eef5f4; --callout-border:#d8e6e4;
+  --banner-from:#f8f4ea; --banner-to:#f2ecdf;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Noto Serif TC',serif; font-size:1.02rem; line-height:1.85; }
+header.hero { background:linear-gradient(135deg,var(--banner-from) 0%,var(--banner-to) 100%);
+  border-bottom:2px solid var(--rule); padding:3.2rem 1.5rem 2.6rem; text-align:center; }
+.badge { display:inline-block; background:white; border-radius:999px; padding:.3rem 1rem;
+  font-family:'Noto Sans TC',sans-serif; font-size:.72rem; letter-spacing:.08em;
+  color:var(--accent-deep); margin-bottom:1.1rem; border:1px solid var(--rule); }
+header.hero h1 { font-size:1.9rem; font-weight:700; margin:0 0 .6rem; color:var(--ink-light); }
+header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:italic;
+  color:var(--ink-muted); font-size:1.15rem; margin:0 0 1.3rem; }
+.header-tags { display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; }
+.header-tags span { background:var(--accent-deep); color:white; border-radius:4px;
+  padding:.25rem .8rem; font-family:'Noto Sans TC',sans-serif; font-size:.74rem; letter-spacing:.04em; }
+.top-bar { display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  max-width:760px; margin:0 auto; padding:1.7rem 1.5rem 0;
+  font-family:'Noto Sans TC',sans-serif; font-size:.8rem; }
+.top-bar .brand { color:var(--ink-muted); text-decoration:none; }
+.top-bar .crumb { color:var(--accent-deep); text-decoration:none; font-weight:500; white-space:nowrap; }
+.top-bar a:hover { color:var(--accent-warm); }
+.float-nav { position:fixed; top:50%; right:1.6rem; transform:translateY(-50%);
+  background:var(--bg-card); border:1px solid var(--rule); border-radius:18px;
+  padding:.65rem .45rem .7rem; box-shadow:0 8px 28px rgba(60,52,44,.10);
+  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.3rem; }
+.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.6rem; letter-spacing:.2em;
+  color:var(--ink-muted); padding-bottom:.45rem; margin-bottom:.2rem;
+  border-bottom:1px solid var(--rule); width:100%; text-align:center; }
+.float-nav a { position:relative; width:2.5rem; height:2.5rem; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:600;
+  color:var(--ink-muted); text-decoration:none; transition:all .2s; }
+.float-nav a:hover,.float-nav a.active { background:var(--callout-bg); color:var(--accent-deep); }
+.float-nav a .tooltip { position:absolute; right:3.1rem; top:50%; transform:translateY(-50%);
+  background:var(--ink); color:#fcfbf9; padding:.55rem .9rem; border-radius:10px;
+  font-family:'Noto Sans TC',sans-serif; font-size:.74rem; white-space:normal;
+  width:max-content; max-width:14rem; line-height:1.6; opacity:0; pointer-events:none;
+  transition:opacity .2s; box-shadow:0 6px 20px rgba(0,0,0,.15); }
+.float-nav a:hover .tooltip { opacity:1; }
+@media (max-width:640px){ .float-nav{right:.6rem;padding:.5rem .35rem;}
+  .float-nav a{width:2.1rem;height:2.1rem;font-size:1rem;}
+  .float-nav a .tooltip{max-width:10rem;font-size:.68rem;} }
+main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
+.intro { background:rgba(236,227,208,.4); border:1px solid var(--rule); border-radius:12px;
+  padding:1.4rem 1.7rem; margin-bottom:2.4rem; font-size:.92rem; color:var(--ink-muted); line-height:1.9; }
+.talk-tags { display:flex; gap:.5rem; margin-bottom:.7rem; flex-wrap:wrap; }
+.tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
+  font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
+.talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.talk-speaker { font-family:'Noto Sans TC',sans-serif; color:var(--ink-muted); font-size:.85rem; margin:0 0 1.6rem; }
+.callout { background:var(--callout-bg); border:1px solid var(--callout-border); border-radius:12px;
+  padding:1.3rem 1.6rem; margin:1.4rem 0 2rem; }
+.callout-title { font-family:'Noto Sans TC',sans-serif; font-weight:500; font-size:.88rem;
+  color:var(--accent-deep); margin-bottom:.55rem; display:flex; align-items:center; gap:.45rem; }
+.callout-body { font-size:.94rem; line-height:1.85; }
+.callout-body strong { color:var(--accent-warm); font-weight:600; }
+.section-head { display:flex; align-items:baseline; gap:.7rem; margin:2.4rem 0 1.1rem; }
+.section-num { font-family:'Cormorant Garamond',serif; font-size:1.7rem; color:var(--highlight); font-weight:600; }
+.section-title { font-size:1.14rem; font-weight:500; color:var(--accent-deep); margin:0; }
+.section-title-plain { font-size:1.14rem; font-weight:500; color:var(--accent-deep); margin:2.4rem 0 1.1rem; }
+.sub-title { font-size:1rem; font-weight:500; color:var(--ink-light); margin:1.5rem 0 .6rem; }
+p { margin:0 0 1.05rem; }
+strong { color:var(--accent-warm); font-weight:600; }
+.ts { color:var(--ink-muted); font-size:.82rem; font-family:'Noto Sans TC',sans-serif; }
+ul,ol { padding-left:1.5rem; margin:0 0 1.2rem; }
+li { margin-bottom:.5rem; }
+blockquote { margin:1.3rem 0; padding:1rem 1.4rem; background:var(--bg-card);
+  border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  font-style:italic; color:var(--ink-muted); font-size:.95rem; }
+a { color:var(--accent-warm); }
+.table-wrap { overflow-x:auto; margin:1.3rem 0; }
+table { border-collapse:collapse; width:100%; border:1px solid var(--rule); border-radius:12px; overflow:hidden; }
+th,td { border:1px solid var(--rule); padding:.6rem .9rem; text-align:left; font-size:.9rem; }
+th { background:var(--bg-warm); font-family:'Noto Sans TC',sans-serif; font-weight:500; color:var(--ink-light); }
+td { background:var(--bg-card); }
+.summary { background:var(--bg-warm); border:1px solid var(--rule); border-radius:12px;
+  padding:1.7rem 1.9rem; margin-top:2rem; }
+.summary-key { font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.14em;
+  color:var(--highlight); margin-bottom:.9rem; font-weight:500; }
+.summary-list { margin:0; padding-left:1.3rem; }
+.summary-list li { font-size:.92rem; margin-bottom:.65rem; }
+.anecdote { background:var(--bg-card); border:1px dashed var(--rule); border-radius:12px;
+  padding:1.6rem 1.9rem; margin-top:1.6rem; }
+.anecdote-key { font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.14em;
+  color:var(--accent-deep); margin-bottom:.9rem; font-weight:500; }
+.anecdote p.lead { font-size:.9rem; color:var(--ink-muted); margin-bottom:.9rem; }
+.anecdote ul { margin:0; padding-left:1.2rem; }
+.anecdote li { font-size:.9rem; margin-bottom:.7rem; }
+.appendix { border-top:1px solid var(--rule); margin-top:2.6rem; padding-top:1.8rem; }
+.appendix .section-title-plain { margin-top:0; }
+.appendix p { font-size:.92rem; }
+.topics { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted); margin-top:1.3rem; }
+.topics-label { color:var(--highlight); margin-right:.6rem; font-weight:500; }
+.page-nav { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+  margin-top:3.2rem; padding-top:1.6rem; border-top:1px solid var(--rule);
+  font-family:'Noto Sans TC',sans-serif; font-size:.82rem; }
+.page-nav a { color:var(--ink-muted); text-decoration:none; max-width:19rem; }
+.page-nav a:hover { color:var(--accent-warm); }
+.page-nav .next { margin-left:auto; text-align:right; }
+.day-label { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; letter-spacing:.22em;
+  color:var(--highlight); margin:2.6rem 0 1rem; }
+.agenda-list { display:flex; flex-direction:column; gap:.7rem; }
+.agenda-card { display:flex; align-items:flex-start; gap:1.2rem; background:var(--bg-card);
+  border:1px solid var(--rule); border-radius:12px; padding:1.1rem 1.4rem;
+  text-decoration:none; color:inherit; transition:all .2s; }
+a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,52,44,.08); transform:translateY(-1px); }
+.agenda-card.muted { opacity:.6; }
+.agenda-time { font-family:'Cormorant Garamond',serif; font-size:1.05rem; color:var(--ink-muted);
+  width:6.4rem; flex-shrink:0; padding-top:.15rem; }
+.agenda-main { flex:1; display:flex; flex-direction:column; gap:.3rem; min-width:0; }
+.agenda-title { font-weight:500; color:var(--ink-light); font-size:1rem; }
+.agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
+.agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
+.agenda-status { font-family:'Noto Sans TC',sans-serif; font-size:.68rem; white-space:nowrap;
+  padding:.28rem .75rem; border-radius:999px; flex-shrink:0; }
+.agenda-status.done { background:var(--callout-bg); color:var(--accent-deep); }
+.agenda-status.none { background:var(--tag-bg); color:var(--ink-muted); }
+#back-to-top { position:fixed; bottom:2rem; right:2rem; width:3.2rem; height:3.2rem;
+  background:white; border:2px solid var(--rule); border-radius:50%;
+  box-shadow:0 4px 20px rgba(0,0,0,.10); opacity:0; transform:translateY(12px) scale(.9);
+  transition:opacity .3s,transform .3s; pointer-events:none;
+  display:flex; align-items:center; justify-content:center; cursor:pointer; }
+#back-to-top.visible { opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+#back-to-top:hover { border-color:var(--accent); transform:translateY(-2px) scale(1.07); }
+footer { text-align:center; padding:2.6rem 1.5rem 3rem; color:var(--ink-muted);
+  font-family:'Noto Sans TC',sans-serif; font-size:.76rem; border-top:1px solid var(--rule); }
+@media (max-width:600px){ header.hero h1{font-size:1.4rem;} .talk-title{font-size:1.22rem;}
+  main{padding:1.6rem 1.1rem 3rem;} .agenda-card{flex-wrap:wrap;} .agenda-time{width:auto;} }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="badge">● 教師增能研習筆記</div>
+  <h1>2026 教育民主韌性教師增能研習</h1>
+  <p class="subtitle">認知作戰・社群媒體・數位外交・大國競爭</p>
+  <div class="header-tags">
+    <span>2026/8/13–8/14</span><span>高雄</span><span>國立中山大學公民社會研究中心</span>
+  </div>
+</header>
+<main>
+  <div class="intro">
+    兩天九場的研習，這裡收錄七場的完整筆記。點選任一場次即可閱讀；開幕式與議題咖啡館屬綜合活動，未另做筆記。每篇筆記開頭都有「全場一句話」，內文〔　〕內為原始講座時間戳記。
+  </div>
+  <div class="day-label">Day 1 · 8/13</div><div class="agenda-list"><div class="agenda-card muted"><span class="agenda-time">10:00–10:30</span><span class="agenda-main"><span class="agenda-title">開幕式／計畫介紹</span><span class="agenda-speaker">張宇慧</span></span><span class="agenda-status none">無獨立筆記</span></div><a class="agenda-card" href="session-2.html"><span class="agenda-time">10:30–12:00</span><span class="agenda-main"><span class="agenda-title">從認知作戰看中國：青年世代的理解與應對</span><span class="agenda-speaker">陳宗巖、黎寶文</span><span class="agenda-summary">台灣的三重高度認同與中國的統一決心構成無法調和的矛盾，認知作戰因此是必然產物；而教學現場真正的破口不是假訊息太多，是大人避談。</span></span><span class="agenda-status done">筆記已整理</span></a><a class="agenda-card" href="session-3.html"><span class="agenda-time">13:00–14:10</span><span class="agenda-main"><span class="agenda-title">抖音對青年世代的認知影響</span><span class="agenda-speaker">Eric Hsu</span><span class="agenda-summary">TikTok 不需要憑空造假，只要放大台灣既有的社會分歧；反事實分析證實「有在用」這個行為本身，就會改變使用者的政治態度。</span></span><span class="agenda-status done">筆記已整理</span></a><a class="agenda-card" href="session-4.html"><span class="agenda-time">14:20–15:30</span><span class="agenda-main"><span class="agenda-title">讓世界看見台灣：數位外交、校園實作與青年公共參與</span><span class="agenda-speaker">郭家佑</span><span class="agenda-summary">國際觀不該停在多讀新聞，而是讓學生遇到真人、面對需要回應的情境——以宜蘭高中與挪威北極圈高中的無線電連線示範怎麼落地。</span></span><span class="agenda-status done">筆記已整理</span></a><a class="agenda-card" href="session-5.html"><span class="agenda-time">15:50–17:00</span><span class="agenda-main"><span class="agenda-title">Taiwan in twenty-First Century Great Power Competition</span><span class="agenda-speaker">方志恒 Brian C. H. Fong</span><span class="agenda-summary">權力分布決定一個國家走向哪裡，政體決定它衝得多快；1992 年兩岸軍費相當，如今中國是台灣的二十倍，這才是理解一切軍事施壓的大架構。</span></span><span class="agenda-status done">筆記已整理</span></a></div><div class="day-label">Day 2 · 8/14</div><div class="agenda-list"><a class="agenda-card" href="session-6.html"><span class="agenda-time">09:00–10:20</span><span class="agenda-main"><span class="agenda-title">重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span><span class="agenda-speaker">汪彥成</span><span class="agenda-summary">短影音是一種行為，不是一種長度。它給新聞機構的是陌生開發能力；而要接住這份注意力，得先問讀者「他為什麼要看」。</span></span><span class="agenda-status done">筆記已整理</span></a><a class="agenda-card" href="session-7.html"><span class="agenda-time">10:30–11:50</span><span class="agenda-main"><span class="agenda-title">從烏俄戰爭看全民韌性</span><span class="agenda-speaker">劉致昕</span><span class="agenda-summary">俄羅斯的入侵是一場精算過的資訊戰演出，五個階段各有固定劇本；中共官方刊物已把它定調為「慢性戰爭」的範本——磨掉的是撐下去的意志。</span></span><span class="agenda-status done">筆記已整理</span></a><a class="agenda-card" href="session-8.html"><span class="agenda-time">13:00–15:00</span><span class="agenda-main"><span class="agenda-title">AI查證力如何進入教室</span><span class="agenda-speaker">陳慧敏</span><span class="agenda-summary">查證不是背工具，是先有一張事件的資訊地圖，認出那段必然的空白期；而在 AI 能量產影像與迷因的今天，最該守住的是注意力與對話的能力。</span></span><span class="agenda-status done">筆記已整理</span></a><div class="agenda-card muted"><span class="agenda-time">15:20–16:30</span><span class="agenda-main"><span class="agenda-title">議題咖啡館</span><span class="agenda-speaker">張宇慧等 5 位講者</span></span><span class="agenda-status none">無獨立筆記</span></div></div>
+</main>
+
+<button id="back-to-top" aria-label="回到頂端">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V6M6 11l6-6 6 6" stroke="#63807d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+<script>
+  var btn=document.getElementById('back-to-top');
+  window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>300);});
+  btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+
+<footer>2026 教育民主韌性教師增能研習・筆記整理</footer>
+</body>
+</html>

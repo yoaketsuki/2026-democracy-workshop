@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>重新思考新聞短影音：社群媒體的知識轉譯與議題探究｜2026 教育民主韌性教師增能研習</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#faf8f5; --bg-warm:#f3eee3; --bg-card:#fcfbf9;
+  --ink:#3c342c; --ink-light:#2a241d; --ink-muted:#837c6c;
+  --accent:#93aeaa; --accent-deep:#63807d; --accent-warm:#ba8a61;
+  --rule:#ebe3d3; --tag-bg:#f3ede0; --highlight:#ba8a61;
+  --callout-bg:#eef5f4; --callout-border:#d8e6e4;
+  --banner-from:#f8f4ea; --banner-to:#f2ecdf;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Noto Serif TC',serif; font-size:1.02rem; line-height:1.85; }
+header.hero { background:linear-gradient(135deg,var(--banner-from) 0%,var(--banner-to) 100%);
+  border-bottom:2px solid var(--rule); padding:3.2rem 1.5rem 2.6rem; text-align:center; }
+.badge { display:inline-block; background:white; border-radius:999px; padding:.3rem 1rem;
+  font-family:'Noto Sans TC',sans-serif; font-size:.72rem; letter-spacing:.08em;
+  color:var(--accent-deep); margin-bottom:1.1rem; border:1px solid var(--rule); }
+header.hero h1 { font-size:1.9rem; font-weight:700; margin:0 0 .6rem; color:var(--ink-light); }
+header.hero .subtitle { font-family:'Cormorant Garamond',serif; font-style:italic;
+  color:var(--ink-muted); font-size:1.15rem; margin:0 0 1.3rem; }
+.header-tags { display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; }
+.header-tags span { background:var(--accent-deep); color:white; border-radius:4px;
+  padding:.25rem .8rem; font-family:'Noto Sans TC',sans-serif; font-size:.74rem; letter-spacing:.04em; }
+.top-bar { display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  max-width:760px; margin:0 auto; padding:1.7rem 1.5rem 0;
+  font-family:'Noto Sans TC',sans-serif; font-size:.8rem; }
+.top-bar .brand { color:var(--ink-muted); text-decoration:none; }
+.top-bar .crumb { color:var(--accent-deep); text-decoration:none; font-weight:500; white-space:nowrap; }
+.top-bar a:hover { color:var(--accent-warm); }
+.float-nav { position:fixed; top:50%; right:1.6rem; transform:translateY(-50%);
+  background:var(--bg-card); border:1px solid var(--rule); border-radius:18px;
+  padding:.65rem .45rem .7rem; box-shadow:0 8px 28px rgba(60,52,44,.10);
+  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.3rem; }
+.float-nav-label { font-family:'Noto Sans TC',sans-serif; font-size:.6rem; letter-spacing:.2em;
+  color:var(--ink-muted); padding-bottom:.45rem; margin-bottom:.2rem;
+  border-bottom:1px solid var(--rule); width:100%; text-align:center; }
+.float-nav a { position:relative; width:2.5rem; height:2.5rem; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:600;
+  color:var(--ink-muted); text-decoration:none; transition:all .2s; }
+.float-nav a:hover,.float-nav a.active { background:var(--callout-bg); color:var(--accent-deep); }
+.float-nav a .tooltip { position:absolute; right:3.1rem; top:50%; transform:translateY(-50%);
+  background:var(--ink); color:#fcfbf9; padding:.55rem .9rem; border-radius:10px;
+  font-family:'Noto Sans TC',sans-serif; font-size:.74rem; white-space:normal;
+  width:max-content; max-width:14rem; line-height:1.6; opacity:0; pointer-events:none;
+  transition:opacity .2s; box-shadow:0 6px 20px rgba(0,0,0,.15); }
+.float-nav a:hover .tooltip { opacity:1; }
+@media (max-width:640px){ .float-nav{right:.6rem;padding:.5rem .35rem;}
+  .float-nav a{width:2.1rem;height:2.1rem;font-size:1rem;}
+  .float-nav a .tooltip{max-width:10rem;font-size:.68rem;} }
+main { max-width:760px; margin:0 auto; padding:2.4rem 1.5rem 4rem; }
+.intro { background:rgba(236,227,208,.4); border:1px solid var(--rule); border-radius:12px;
+  padding:1.4rem 1.7rem; margin-bottom:2.4rem; font-size:.92rem; color:var(--ink-muted); line-height:1.9; }
+.talk-tags { display:flex; gap:.5rem; margin-bottom:.7rem; flex-wrap:wrap; }
+.tag { background:var(--tag-bg); color:var(--accent-deep); border-radius:999px; padding:.2rem .75rem;
+  font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.03em; }
+.talk-title { font-size:1.55rem; font-weight:700; color:var(--ink-light); margin:0 0 .4rem; }
+.talk-speaker { font-family:'Noto Sans TC',sans-serif; color:var(--ink-muted); font-size:.85rem; margin:0 0 1.6rem; }
+.callout { background:var(--callout-bg); border:1px solid var(--callout-border); border-radius:12px;
+  padding:1.3rem 1.6rem; margin:1.4rem 0 2rem; }
+.callout-title { font-family:'Noto Sans TC',sans-serif; font-weight:500; font-size:.88rem;
+  color:var(--accent-deep); margin-bottom:.55rem; display:flex; align-items:center; gap:.45rem; }
+.callout-body { font-size:.94rem; line-height:1.85; }
+.callout-body strong { color:var(--accent-warm); font-weight:600; }
+.section-head { display:flex; align-items:baseline; gap:.7rem; margin:2.4rem 0 1.1rem; }
+.section-num { font-family:'Cormorant Garamond',serif; font-size:1.7rem; color:var(--highlight); font-weight:600; }
+.section-title { font-size:1.14rem; font-weight:500; color:var(--accent-deep); margin:0; }
+.section-title-plain { font-size:1.14rem; font-weight:500; color:var(--accent-deep); margin:2.4rem 0 1.1rem; }
+.sub-title { font-size:1rem; font-weight:500; color:var(--ink-light); margin:1.5rem 0 .6rem; }
+p { margin:0 0 1.05rem; }
+strong { color:var(--accent-warm); font-weight:600; }
+.ts { color:var(--ink-muted); font-size:.82rem; font-family:'Noto Sans TC',sans-serif; }
+ul,ol { padding-left:1.5rem; margin:0 0 1.2rem; }
+li { margin-bottom:.5rem; }
+blockquote { margin:1.3rem 0; padding:1rem 1.4rem; background:var(--bg-card);
+  border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  font-style:italic; color:var(--ink-muted); font-size:.95rem; }
+a { color:var(--accent-warm); }
+.table-wrap { overflow-x:auto; margin:1.3rem 0; }
+table { border-collapse:collapse; width:100%; border:1px solid var(--rule); border-radius:12px; overflow:hidden; }
+th,td { border:1px solid var(--rule); padding:.6rem .9rem; text-align:left; font-size:.9rem; }
+th { background:var(--bg-warm); font-family:'Noto Sans TC',sans-serif; font-weight:500; color:var(--ink-light); }
+td { background:var(--bg-card); }
+.summary { background:var(--bg-warm); border:1px solid var(--rule); border-radius:12px;
+  padding:1.7rem 1.9rem; margin-top:2rem; }
+.summary-key { font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.14em;
+  color:var(--highlight); margin-bottom:.9rem; font-weight:500; }
+.summary-list { margin:0; padding-left:1.3rem; }
+.summary-list li { font-size:.92rem; margin-bottom:.65rem; }
+.anecdote { background:var(--bg-card); border:1px dashed var(--rule); border-radius:12px;
+  padding:1.6rem 1.9rem; margin-top:1.6rem; }
+.anecdote-key { font-family:'Noto Sans TC',sans-serif; font-size:.7rem; letter-spacing:.14em;
+  color:var(--accent-deep); margin-bottom:.9rem; font-weight:500; }
+.anecdote p.lead { font-size:.9rem; color:var(--ink-muted); margin-bottom:.9rem; }
+.anecdote ul { margin:0; padding-left:1.2rem; }
+.anecdote li { font-size:.9rem; margin-bottom:.7rem; }
+.appendix { border-top:1px solid var(--rule); margin-top:2.6rem; padding-top:1.8rem; }
+.appendix .section-title-plain { margin-top:0; }
+.appendix p { font-size:.92rem; }
+.topics { font-family:'Noto Sans TC',sans-serif; font-size:.78rem; color:var(--ink-muted); margin-top:1.3rem; }
+.topics-label { color:var(--highlight); margin-right:.6rem; font-weight:500; }
+.page-nav { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+  margin-top:3.2rem; padding-top:1.6rem; border-top:1px solid var(--rule);
+  font-family:'Noto Sans TC',sans-serif; font-size:.82rem; }
+.page-nav a { color:var(--ink-muted); text-decoration:none; max-width:19rem; }
+.page-nav a:hover { color:var(--accent-warm); }
+.page-nav .next { margin-left:auto; text-align:right; }
+.day-label { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; letter-spacing:.22em;
+  color:var(--highlight); margin:2.6rem 0 1rem; }
+.agenda-list { display:flex; flex-direction:column; gap:.7rem; }
+.agenda-card { display:flex; align-items:flex-start; gap:1.2rem; background:var(--bg-card);
+  border:1px solid var(--rule); border-radius:12px; padding:1.1rem 1.4rem;
+  text-decoration:none; color:inherit; transition:all .2s; }
+a.agenda-card:hover { border-color:var(--accent); box-shadow:0 4px 18px rgba(60,52,44,.08); transform:translateY(-1px); }
+.agenda-card.muted { opacity:.6; }
+.agenda-time { font-family:'Cormorant Garamond',serif; font-size:1.05rem; color:var(--ink-muted);
+  width:6.4rem; flex-shrink:0; padding-top:.15rem; }
+.agenda-main { flex:1; display:flex; flex-direction:column; gap:.3rem; min-width:0; }
+.agenda-title { font-weight:500; color:var(--ink-light); font-size:1rem; }
+.agenda-speaker { font-family:'Noto Sans TC',sans-serif; font-size:.76rem; color:var(--ink-muted); }
+.agenda-summary { font-size:.87rem; color:var(--ink-muted); line-height:1.75; margin-top:.2rem; }
+.agenda-status { font-family:'Noto Sans TC',sans-serif; font-size:.68rem; white-space:nowrap;
+  padding:.28rem .75rem; border-radius:999px; flex-shrink:0; }
+.agenda-status.done { background:var(--callout-bg); color:var(--accent-deep); }
+.agenda-status.none { background:var(--tag-bg); color:var(--ink-muted); }
+#back-to-top { position:fixed; bottom:2rem; right:2rem; width:3.2rem; height:3.2rem;
+  background:white; border:2px solid var(--rule); border-radius:50%;
+  box-shadow:0 4px 20px rgba(0,0,0,.10); opacity:0; transform:translateY(12px) scale(.9);
+  transition:opacity .3s,transform .3s; pointer-events:none;
+  display:flex; align-items:center; justify-content:center; cursor:pointer; }
+#back-to-top.visible { opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+#back-to-top:hover { border-color:var(--accent); transform:translateY(-2px) scale(1.07); }
+footer { text-align:center; padding:2.6rem 1.5rem 3rem; color:var(--ink-muted);
+  font-family:'Noto Sans TC',sans-serif; font-size:.76rem; border-top:1px solid var(--rule); }
+@media (max-width:600px){ header.hero h1{font-size:1.4rem;} .talk-title{font-size:1.22rem;}
+  main{padding:1.6rem 1.1rem 3rem;} .agenda-card{flex-wrap:wrap;} .agenda-time{width:auto;} }
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <a class="brand" href="index.html">2026 教育民主韌性教師增能研習</a>
+  <a class="crumb" href="index.html">← 返回總覽</a>
+</div>
+<div class="float-nav"><div class="float-nav-label">場次</div><a href="session-2.html">2<span class="tooltip">第2場・</span></a><a href="session-3.html">3<span class="tooltip">第3場・抖音對青年世代的認知影響</span></a><a href="session-4.html">4<span class="tooltip">第4場・讓世界看見台灣：數位外交、校園實作與青年公共參與</span></a><a href="session-5.html">5<span class="tooltip">第5場・Taiwan in twenty-First Century Great Power Competition</span></a><a href="session-6.html" class="active">6<span class="tooltip">第6場・重新思考新聞短影音：社群媒體的知識轉譯與議題探究</span></a><a href="session-7.html">7<span class="tooltip">第7場・從烏俄戰爭看全民韌性</span></a><a href="session-8.html">8<span class="tooltip">第8場・AI查證力如何進入教室</span></a></div>
+<main>
+  <div class="talk-tags"><span class="tag">第6場</span><span class="tag">Day 2・第6場・09:00–10:20｜高雄</span></div>
+  <h1 class="talk-title">重新思考新聞短影音：社群媒體的知識轉譯與議題探究</h1>
+  <p class="talk-speaker">汪彥成（《報導者》影音製作人）</p>
+  <div class="callout">
+    <div class="callout-title"><span>📋</span>全場一句話</div>
+    <div class="callout-body">短影音真正的定義不是「幾秒以內的影片」，而是<strong>一種行為</strong>——在演算法上被動、隨機地探索內容；正因為如此，它對新聞機構的意義不是「內容變淺」，而是<strong>陌生開發能力</strong>：能碰到那些已經開始迴避新聞的人。而要接住這份注意力，靠的不是把議題講得更重要，是先問讀者「他為什麼要看」。</div>
+  </div>
+  <div class="talk-body"><div class="section-head"><span class="section-num">一</span><h2 class="section-title">講者背景：非科班出身的新聞影音製作人</h2></div>
+<p>汪彥成主動澄清自己不是相關專業出身：大學念政大國貿，研究所念臺北藝術大學，做過政治工作，也待過 NGO，之後才進入全職新聞工作。2019–2022 年在公視《有話好說》（陳信聰主持的論壇節目），2022 年起進入《報導者》。<span class="ts">〔約 03 分處〕</span></p>
+<p>在《報導者》的前兩年，他的角色是<strong>社群編輯</strong>：管理 Facebook、IG、Threads 的貼文與圖卡，編輯網站新聞（記者交稿到讀者看到之間的那一段），以及 podcast 的上架、標題製作與圖卡推播；短影音也是那時候開始嘗試的。2024 年轉為<strong>影音製作</strong>，主力投入議題型短影音，目標是讓在社群上看新聞的讀者，也有機會透過三、四分鐘的影片接觸到《報導者》比較長篇、深度的報導。題材橫跨交通、兒少、醫療、財政、國安、國際關係、國防，以及重大司法案件。近兩年也開始把其他記者推到鏡頭前，讓他們直接向觀眾講述調查或現場採訪所得。<span class="ts">〔約 03–05 分處〕</span></p>
+<div class="section-head"><span class="section-num">二</span><h2 class="section-title">案例拆解：海纜報導是怎麼做出來的</h2></div>
+<h3 class="sub-title">事件與成效</h3>
+<p>2025 年 2 月，中資背景的多哥籍權宜輪<strong>宏泰58</strong>在台南將軍漁港外海拖斷台澎第 3 海纜，遭海巡以現行犯攔停、押返安平港，王姓船長遭台南地檢署起訴（後判刑 3 年）。這是台灣第一次能針對涉嫌破壞海底電纜的船隻進行調查。《報導者》在原本已籌備海纜專題的基礎上，臨時決定把這起突發事件做成約四分多鐘的短影音報導。<span class="ts">〔09:42〕</span></p>
+<p>成效數據值得記下<span class="ts">〔約 11 分處〕</span>：</p>
+<ul>
+<li>各平台累積觀看約 <strong>90 萬人次</strong></li>
+<li>靜態圖卡版本觸及的主要仍是既有追蹤者；<strong>做成短影音後，將近七成觸及的是過去沒有追蹤過《報導者》的受眾</strong></li>
+<li>應網友要求另製英文字幕版本再上傳一次</li>
+<li>日本愛知電視台看到後洽談授權，把貨輪移動軌跡動畫用於時事談話節目</li>
+<li>獲 <strong>SOPA（亞洲出版業協會）報導創新獎</strong>肯定，據汪彥成所知是短影音這種呈現形式第一次在 SOPA 獲獎</li>
+</ul>
+<p>值得注意的是後續驗證：南檢起訴書中特別標注該船的 <strong>zigzag（Z 字形）</strong>異常移動軌跡，而《報導者》這支影片是最早、也可能是唯一把這段軌跡以動畫還原呈現在大眾視野前的報導。</p>
+<h3 class="sub-title">四種素材的組合</h3>
+<ol>
+<li><strong>自建資料 + 視覺化（影片最精華的部分）</strong>——2025 年初第一次斷纜事件後，《報導者》注意到 *Financial Times* 很快抓出了涉事船隻的移動軌跡，研判是透過岸邊接收 AIS 訊號的資料庫。於是《報導者》的工程師自建了一個線上工具，自動抓取並儲存台灣周邊海域的船舶訊號。原本只是想供未來文字深度報導使用，沒想到二月就派上用場——資料一調出來，就能看到宏泰58前段航速正常、後段以極慢速度在同一路線上大量往返徘徊，直接還原成動畫。<span class="ts">〔約 13–15 分處〕</span></li>
+<li><strong>現場拍攝</strong>——汪彥成坦言：「有沒有拍現場畫面並不是絕對必要，用嘴巴講也講得出來」，去現場是為了視覺化與臨場感。到安平商港拍攝時觀察到幾個細節：船身名稱是<strong>可抽換的卡片</strong>（船名一變再變，AIS 呼號與船身不符，當時被稱為「千面船」）；船體破舊，與歐洲波羅的海影子艦隊涉嫌破壞海纜的船隻特徵吻合；<strong>少了一邊的船錨</strong>（歐洲案例中曾撈到掉落海底的船錨）。拍攝時船員因未正式入境不能下船，好奇地在船上看著他們。<span class="ts">〔約 16–18 分處〕</span></li>
+<li><strong>記者出鏡（stand）</strong>——直接站在觀眾面前講話，而不是用傳統電視新聞那種「很高大上」的新聞化語調。</li>
+<li><strong>外部資料補脈絡</strong>——各國外媒報導、外國政要回應（例如《明鏡週刊》訪問德國國防部長的完整論述）、歐洲既有事件的航跡資料重製為自己的版本。</li>
+</ol>
+<h3 class="sub-title">製作的關鍵：時間花在腳本</h3>
+<p>汪彥成強調，順暢的短影音<strong>極度仰賴快速形成的腳本架構</strong>——腳本決定要呈現哪些新聞資訊、用什麼順序與資訊邏輯。實務上花最多時間的是寫文字腳本，後期製作反而相對快。<span class="ts">〔約 19 分處〕</span></p>
+<div class="section-head"><span class="section-num">三</span><h2 class="section-title">先承認短影音的問題</h2></div>
+<p>在談「為什麼是短影音」之前，汪彥成刻意先攤開這個媒介的問題<span class="ts">〔約 20–25 分處〕</span>：</p>
+<ul>
+<li><strong>錯假資訊</strong>：2024 年有中國人看了抖音上「去俄國當兵、只做後勤與醫療兵、高薪」的宣傳影片就真的跑去當傭兵，結果被送上烏克蘭前線、遭俘，被俘前還差點被俄軍滅口——資訊來源全部只是抖音短影音。</li>
+<li><strong>青少年心理健康</strong>：芬蘭公視做過一個網路實驗，建立一個「13 歲、對身形不滿、情緒略低落」的假人設抖音帳號。一開始推播的是烹飪、貓、笑話等常見青少女內容，但隨時間推移，開始出現抗憂鬱藥物、童年創傷、極端飲食習慣與身形追求，甚至自殘自殺經驗的討論。這正是澳洲等西方國家推動社群年齡禁令的背景。</li>
+<li><strong>平台政治偏差</strong>：某智庫以西藏、天安門、維吾爾、新疆等關鍵字在各平台搜尋，比對前數百筆結果，發現抖音上呈現批判／抵抗中國論述的影片比例<strong>遠低於</strong> IG、YouTube 等其他平台。</li>
+</ul>
+<p>他也提醒這幾個例子集中在抖音，是比較極端的狀況，但其他平台並非完全沒有問題，只是程度差別。</p>
+<h3 class="sub-title">一段被遺忘的歷史：IG 的短影音風波</h3>
+<p>2021–2022 年間 IG 曾突然改版成「非常像抖音」的介面——一次只滑到一個內容、影片自動播放、大量出現非追蹤者內容。社群強烈反彈，連全球追蹤數最高的 Kim Kardashian 都發起 <strong>"Make Instagram Instagram Again"</strong> 運動，IG 負責人 Adam Mosseri 甚至親自出面拍影片解釋。<span class="ts">〔約 26 分處〕</span></p>
+<p>汪彥成用這段歷史帶出他真正的問題：短影音當年遭遇這麼多阻力——媒體識讀挑戰、假訊息、青少年心理健康、演算法偏差、接受度也不是理所當然——但短短三四年後，紐約時報、金融時報、經濟學人、半島電視台等各大外媒都已大量運用短影音呈現新聞議題，它成了重要的敘事工具。<strong>中間發生了什麼事？</strong></p>
+<div class="section-head"><span class="section-num">四</span><h2 class="section-title">核心論點：短影音是一種行為，不是一種長度</h2></div>
+<h3 class="sub-title">重新定義</h3>
+<p>要問「為什麼是短影音」，得先問「什麼是短影音」——三十秒以內？六十秒以內？家族群組裡長輩傳的十五秒小孩影片算不算？汪彥成的答案是：<strong>我們講短影音，其實是在指一種行為，也就是「滑短影音」</strong>——在特定演算法上，被動而且隨機地接收內容，沒有預設要探索什麼。<span class="ts">〔約 30 分處〕</span></p>
+<p>佐證是一份電商平台調查：問受訪者過去一個月每週主要觀看的影音主題是什麼，選項有直播、遊戲、教做菜、喜劇、迷因等，<strong>但超過九成的人回答「就看啦，平台推什麼給我就看什麼」</strong>。</p>
+<p>這個性質的正面意義是：它是一種<strong>發現式的社群閱聽行為</strong>，對不同來源的接受度與可觸及性都更高。對新聞機構來說，在「新聞迴避」成為趨勢的當下，短影音提供了<strong>強大的陌生開發能力</strong>——重新與那些主動離開新聞的人建立連結的機會。</p>
+<h3 class="sub-title">短影音其實越來越長</h3>
+<p>「短影音」這個詞本身也在失準<span class="ts">〔約 32–34 分處〕</span>：</p>
+<div class="table-wrap"><table><tr><th>平台</th><th>早期限制</th><th>現在</th></tr><tr><td>抖音</td><td>商業雜誌曾說「十五秒定勝負」</td><td>已放寬到約十分鐘（直播存檔更長）</td></tr><tr><td>IG／Facebook Reels</td><td>90 秒 → 3 分鐘</td><td>15 分鐘內都叫 reels（惟演算法仍偏好 3 分鐘內）</td></tr><tr><td>YouTube Shorts</td><td>60 秒</td><td>3 分鐘</td></tr></table></div>
+<p>汪彥成自己做的海纜報導是四分多鐘，心中拿捏的長度約三到五分鐘。他提出一個很有說服力的對照：<strong>傳統電視新聞一則 SOT 帶（記者 OS 配新聞畫面與受訪者發言）通常只有一分半到兩分鐘，四分鐘在電視新聞已經算小專題了。</strong>所以短影音能承載的資訊量與議題深度，<strong>未必不亞於一則電視新聞</strong>。他還提到以前在《有話好說》時，主持人中間穿插的新聞帶還常常被要求「做到一分鐘內就好」。</p>
+<div class="section-head"><span class="section-num">五</span><h2 class="section-title">製作方法論（一）：Jobs to Be Done——先問讀者為什麼要看</h2></div>
+<p>汪彥成點出議題工作者（尤其 NGO）最常見的盲點：<strong>我們都覺得自己的議題很重要，但讀者滑到它的時候，並不是在找重要的東西</strong>。想想使用情境——中午吃飯配著滑、下班通勤打開來看——沒有人是「今天要來看動物福利雞蛋」或「今天要打開來看司法改革」。<span class="ts">〔約 36 分處〕</span></p>
+<blockquote>我想要表達的議題，跟他要看的動機，兩者之間的交集到底是什麼？否則「很重要、很重要」都會變成一種道德勒索——<strong>但很重要不是一種動機。</strong></blockquote>
+<p>他借用 Google 提供給媒體機構的數位轉型課程中的概念工具 <strong>Jobs to Be Done</strong>：使用者點開一支影片，背後一定有一個更前端、更本初的動機想被滿足。可能的「job」包括<span class="ts">〔約 37–39 分處〕</span>：</p>
+<ul>
+<li><strong>Inspire me</strong>——給我一個新的觀點或 insight</li>
+<li><strong>Amuse me</strong>——用視覺、聲音、人物特色娛樂我（不是新聞最擅長的，但動機強大）</li>
+<li><strong>Educate me</strong>——告訴我一件事如何按部就班發生。他用做菜影片解釋這種吸引力：你根本不做菜，但看「一二三步驟做出一道菜」很療癒，因為<strong>邏輯清晰，而且你知道看到最後一定有結果</strong></li>
+<li><strong>Give me a point of view</strong>——我對各種討論很困惑，有沒有一個切入的思考角度</li>
+<li><strong>Update me</strong>——這件事後來怎麼了？他特別稱讚有媒體做的「後來怎麼了」系列：社群熱度過去之後，告訴你新聞人物與政策處理的後續變化</li>
+<li><strong>Keep me on trend</strong>——大家都在討論，我也想知道這是什麼</li>
+</ul>
+<p>這些不是窮盡的清單，重點是<strong>站在讀者的鞋子裡想「他潛在要被滿足的東西是什麼」</strong>，再從中找出議題或腳本裡能打動他的切點。</p>
+<p>對應這些切入點，新聞短影音已經發展出成熟的敘事模式：quick bite（快速交代事件）、commentary（政要與名人回應）、fact-checking／really（證明真假並展示推論過程）、Here's why、Guess what（製造落差感再給細節）、how to（例如「拜登若退選會怎麼發生，一二三四步」）、yes but（呈現正反論述時，先給予肯定再指出需注意之處）。<span class="ts">〔約 39–40 分處〕</span></p>
+<div class="section-head"><span class="section-num">六</span><h2 class="section-title">製作方法論（二）：NICE 原則</h2></div>
+<p>抓到注意力只是開始。汪彥成的比喻是：每一次在社群上的相遇都是「金玉良緣」，尤其碰到演算法把你推給沒追蹤過你的人——<strong>但關係要靠經營</strong>，開頭吸引到之後，得把注意力一路「摳」到最後。他自陳這是自己整理的個人經驗（類比 SWOT、行銷 4C 那類框架），沒有嚴謹學術價值。<span class="ts">〔約 41–47 分處〕</span></p>
+<p><strong>N — Necessity（必要性）</strong>：把議題切分成幾個資訊點後逐一檢驗——少了這個點會有差嗎？沒差就是非必要。《報導者》一篇文章動輒六七千字，要變成短影音必須大量取捨；設定敘事角度之後，<strong>什麼是支撐這條主軸必要的</strong>，會反覆驗證很多次。</p>
+<p><strong>I — Informative（資訊性）</strong>：大家要看的是還不知道的東西。所以要判斷這個議題該從哪裡開始講——需要從盤古開天說起嗎？還是從大眾現有的共識基礎開始？這可能需要一些社群端的調查來判斷受眾了解到什麼程度。另一個面向是<strong>下標題</strong>：社群上的標題邏輯跟傳統新聞網站不同，要直接把訊息告訴讀者，而不是寫成「什麼什麼之分析」「什麼什麼之架構」——<strong>那個分析結果本身是什麼，要直接講出來。</strong></p>
+<p><strong>C — Cohesion（連貫性）</strong>：他自己最重視的一項。社群內容的注意力很容易飄走，所以如果一個主題切成五個資訊點，這五點怎麼順暢編排就是關鍵。他強調<strong>不要小看編輯</strong>：</p>
+<blockquote>為什麼有的人講話你很容易聽懂、很有說服力、有條有理，有的人講話你會想說到底什麼意思？就是那個順序跟邏輯的問題。</blockquote>
+<p>檢驗方法很土法煉鋼但有效：把資訊點切出來，說給身邊的人聽，問他「你懂嗎？你會卡在哪裡？你會在哪邊飄走？你會不會覺得這邊很跳？」</p>
+<p><strong>E — Expectability（可預期性）</strong>：讀者不想看已知的東西，但也不想「不知道自己在哪裡」。他用 IG 圖卡舉例：IG 可以做到二十張，但很少人真的做那麼多，因為滑到第十二張時就會開始想「還有多少」。所以要給線索——一開始就交代敘事主軸、或明說「我要講三個重點」「五大問題」——讓讀者有安定感。同時提醒：<strong>這些不能變成標題釣魚</strong>，騙進來之後靠經營的階段就會露餡。</p>
+<div class="section-head"><span class="section-num">七</span><h2 class="section-title">更大的趨勢：News Influencer 與信任機制的轉型</h2></div>
+<p>汪彥成把最後一段留給一個他認為被低估的因素：<strong>越來越多受眾是透過 news influencer（新聞創作者）接觸新聞資訊</strong>。他對「網紅」這個譯法有意見——中文的「網紅」帶點貶義（要紅、想紅、愛 show off），而 influencer／creator 比較中性，指的是製作內容來建立商業模式的角色。YouTube 現在偏好統稱 creator，不論做的是娛樂還是新聞內容。<span class="ts">〔51:06〕</span></p>
+<p>皮尤（Pew）調查顯示：美國受眾平均約<strong>兩成</strong>透過 news influencer 接收新聞；<strong>18–29 歲則接近四成</strong>會常態性地這樣接收新聞。由於這些創作者最擅長的溝通工具就是短影音，來源管道的轉變也帶動了內容消費形態往短影音集中。</p>
+<p>路透（Reuters Institute）針對全球各大媒體數位主管的調查顯示業界的焦慮：擔心 creator 對傳統新聞產生<strong>替代效應</strong>——把原本花在新聞網站、新聞 App 上的時間與注意力帶走。而<strong>四分之三的新聞主管回應說，他們可能會嘗試讓自家記者變得更像 creator</strong>——這正是為什麼越來越多外媒讓記者站到鏡頭前直接溝通議題。</p>
+<h3 class="sub-title">BBC 前 CEO 的診斷</h3>
+<p>汪彥成引用 BBC 前執行長一段他認為「相當精確」的描述：年輕受眾不是「比較喜歡看網紅、不喜歡傳統新聞」，而是在一個<strong>更碎片化、更分眾的媒體世界裡，選擇一種更直接的新聞形式</strong>（choosing more direct forms of journalism in a more fragmented media universe）。這種形式更重視三個要素——<strong>authenticity（本真／真誠）、independence（獨立性）、opinion（觀點）</strong>。<span class="ts">〔約 55 分處〕</span></p>
+<p>汪彥成把這三者轉譯成自己的製作原則：</p>
+<ul>
+<li><strong>Authenticity → 平視感的議題溝通</strong>。年輕受眾不希望被由上而下地灌輸，而是希望基於你的專長、面對面平等地討論。所以《報導者》也讓記者在鏡頭前分享採訪路上的所得，成效不錯。</li>
+<li><strong>Independence → 新聞工作的可視性</strong>。他的比喻很生動：<strong>鼎泰豐為什麼要放一面玻璃讓你看師傅捏包子？</strong>因為可視性帶來信任——讀者不只知道你做出了什麼，還知道你怎麼做的。具體做法包括說明資料是資料記者從哪些來源挖出來、怎麼整理、遇到什麼挑戰、怎麼克服；採訪專家時交代他過去做什麼研究、有什麼發現；甚至解釋這張插畫或圖表為什麼要這樣設計。他點出背後的關鍵轉變——<strong>年輕讀者的信任機制，已經從「相信權威機構自帶的信任感」轉向「相信個人、建立個人連結」，並對建制化的資訊來源常抱持懷疑。</strong></li>
+<li><strong>Opinion → 有明確問題意識的切角</strong>。當新聞更 creator 化，難免摻進更多評論性質。BBC 前 CEO 的觀察是：年輕讀者其實知道發生了什麼（推播量比誰都大），<strong>他們真正想知道的是可以怎麼思考這件事</strong>。汪彥成的立場是：保持明確觀點與問題意識，不等於做偏頗報導——仍然可以給不同立場、相反觀點陳述與公正報導的機會。他舉自己做的<strong>聯合國第 2758 號決議</strong>影片為例，那支就是明確 commentary 性質，因為它要對抗的是中國大外宣的特定論述，「也不太可能說那我就要怎麼持平」，目的是證明那樣的論述為什麼是錯的、為什麼在歷史文獻上是一種曲解。</li>
+</ul>
+<div class="section-head"><span class="section-num">八</span><h2 class="section-title">《報導者學院》（九月上線）</h2></div>
+<p>汪彥成在最後預告了《報導者》九月要上線的新產品<strong>《報導者學院》</strong>（現場是搶先看，當時尚未公布）。定位是「給每個公民的新聞使用指南」——這幾年出去分享時常被問「你們怎麼選題」「新聞製作的標準是什麼」「怎麼開啟公共對話」，這些方法論不一定只有同業需要，對教育工作者、關注公共議題的人、想進入新聞產業的人都可能有啟發。<span class="ts">〔約 1:00–1:03 分處〕</span></p>
+<p>第一期課程包含：營運長李雪莉談深度報導的旅程（怎麼破冰、怎麼選定主題、進入採訪現場）、國際視野、方君竹談資訊判斷，以及與陳信聰的對話（談公共對話如何在社群輿論場域下健康進行）。</p>
+<p><strong>對教師最相關的是：除了贊助方案外還有公益方案</strong>，希望把《報導者學院》帶進校園，與學生、老師合作討論。九月之後可洽談。主持人在收尾時也點出，這是今天「最帶得走」的東西之一，教育工作者會是首要合作對象。<span class="ts">〔1:04:09〕</span></p></div>
+  <div class="summary"><div class="summary-key">帶得走的具體物件</div><ol class="summary-list"><li><strong>「短影音是一種行為，不是一種長度」</strong>——被動、隨機的發現式閱聽，這個定義改變了整個討論的框架<span class="ts">〔約 30 分處〕</span></li>
+<li><strong>超過九成的人說「平台推什麼我就看什麼」</strong>——一句話說明演算法時代的閱聽現實</li>
+<li><strong>陌生開發能力</strong>——短影音對新聞機構最大的價值；海纜報導近七成觸及是非追蹤者，是硬數據<span class="ts">〔約 11 分處〕</span></li>
+<li><strong>一則電視新聞 SOT 帶只有 1.5–2 分鐘</strong>——用來反駁「短影音一定比較淺」的直覺<span class="ts">〔約 33 分處〕</span></li>
+<li><strong>「很重要不是一種動機」</strong>——可以直接寫在黑板上的一句話<span class="ts">〔約 36 分處〕</span></li>
+<li><strong>Jobs to Be Done 六種動機</strong>——inspire / amuse / educate / give me a POV / update / on trend，可直接當作學生製作影音前的發想工具</li>
+<li><strong>做菜影片為什麼療癒</strong>——邏輯清晰且保證有結果，解釋了「按部就班」本身的吸引力</li>
+<li><strong>NICE 原則</strong>——Necessity／Informative／Cohesion／Expectability，一套可操作的敘事檢查表</li>
+<li><strong>連貫性的土法檢驗</strong>——說給身邊的人聽，問他在哪裡卡住、在哪裡飄走</li>
+<li><strong>鼎泰豐的那面玻璃</strong>——可視性帶來信任，適用於新聞，也完全適用於教學<span class="ts">〔約 56 分處〕</span></li>
+<li><strong>信任機制從「機構權威」轉向「個人連結」</strong>——理解學生為什麼信網紅不信媒體的關鍵框架</li>
+<li><strong>芬蘭公視的假帳號實驗</strong>——13 歲人設在演算法推播下逐步收到自殘與極端飲食內容，是媒體識讀課的現成教材<span class="ts">〔約 22 分處〕</span></li>
+<li><strong>宏泰58 的 Z 字形航跡</strong>——公民媒體用自建資料庫做出比檢方起訴書更早的視覺化證據，是「資料新聞」的具體案例</li>
+<li><strong>《報導者學院》公益方案</strong>——九月後可洽談入校合作</li></ol></div>
+  <div class="anecdote"><div class="anecdote-key">現場軼事</div><ul><li><strong>「完結了」</strong>——講到《報導者》創立至今也十年了，他感嘆一句「還不容易」，接著脫口而出「哎，好，完結了」，自己被這個口誤逗笑，卡了一下才把話接回來。<span class="ts">〔約 1:00 分處〕</span></li></ul></div>
+  
+  <p class="topics"><span class="topics-label">可延伸的主題</span>資料新聞、社群敘事設計、新聞可信度與可視性、學生影音製作教案</p>
+  <div class="page-nav"><a class="prev" href="session-5.html">← 第5場・Taiwan in twenty-First Century Great Power Competition</a><a class="next" href="session-7.html">第7場・從烏俄戰爭看全民韌性 →</a></div>
+</main>
+
+<button id="back-to-top" aria-label="回到頂端">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V6M6 11l6-6 6 6" stroke="#63807d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+<script>
+  var btn=document.getElementById('back-to-top');
+  window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>300);});
+  btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+
+<footer>2026 教育民主韌性教師增能研習・筆記整理</footer>
+</body>
+</html>
